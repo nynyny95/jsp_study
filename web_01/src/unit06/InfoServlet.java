@@ -2,7 +2,6 @@ package unit06;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,13 +33,16 @@ public class InfoServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 이미 만든 메소드를 활용하여 내용 그대로 사용!
-		request.setCharacterEncoding("UTF-8");
-		doGet(request,response);
+//		// 이미 만든 메소드를 활용하여 내용 그대로 사용!
+//		request.setCharacterEncoding("UTF-8");
+//		doGet(request,response);
+//		
+//		// 이렇게 먼저 인코딩 코드를 상단에 먼저 입력해줘야 함!!!!!
+//		// request.setCharacterEncoding("UTF-8");
+//		// 작성 순서에 따라 한글의 깨짐 현상이 일어날 수 있다.
 		
-		// 이렇게 먼저 인코딩 코드를 상단에 먼저 입력해줘야 함!!!!!
-		// request.setCharacterEncoding("UTF-8");
-		// 작성 순서에 따라 한글의 깨짐 현상이 일어날 수 있다.
+		// 필터 적용해보기! - 필터 생성 후 실행!
+		doGet(request, response);
 	}
 
 }
