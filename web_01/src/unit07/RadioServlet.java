@@ -23,6 +23,8 @@ public class RadioServlet extends HttpServlet {
 		String chk_mail = request.getParameter("chk_mail");
 		String content = request.getParameter("content");
 		String[] items = request.getParameterValues("item");
+		String job = request.getParameter("job");
+		String[] interestes = request.getParameterValues("interest");
 		
 		PrintWriter out = response.getWriter();
 		out.print("<html><body>");
@@ -41,6 +43,18 @@ public class RadioServlet extends HttpServlet {
 			// 배열 값 모두 출력을 위한 향상된 for문 사용
 			for (String item : items) {
 				out.println(item + "  ");
+			}
+		}
+		
+		out.println("</b><br>선택한 직업 항목: <b>");
+		out.println(job);
+		
+		out.println("</b><br>선택한 관심분야 항목: <b>");
+		if (interestes == null) {
+			out.println("선택한 항목이 없습니다.");
+		} else {
+			for (String interest : interestes) {
+				out.println(interest + "  ");
 			}
 		}
 		
