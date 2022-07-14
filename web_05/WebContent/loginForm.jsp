@@ -11,17 +11,17 @@
 <body>
 	<form method="post" action="testLogin.jsp">
 		<div class="container">
-			<div class="row">
+			<div class="row align-items-center">
 				<div class="col-sm-3">
 					<img alt="snoopy" src="img/snoopy01.jpg">
 				</div>
 				<div class="col-sm-9">
-					<div class="mb-3 row">
+					<div class="mb-3 row align-items-center">
 						<label for="userid" class="col-sm-3 form-label">아이디: </label>
 						<input type="text" name="id" id="userid" class="col-sm-6 col-form-control"><br>
 					</div>
 					
-					<div class="mb-3 row">
+					<div class="mb-3 row align-items-center">
 						<label for="userpwd" class="col-sm-3 col-form-label">비밀번호: </label>
 						<input type="password" name="pwd" id="userpwd" class="col-sm-6 col-form-control"><br>
 					</div>

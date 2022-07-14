@@ -13,7 +13,8 @@
 		
 		<label for="id">비밀번호</label>
 		<input name="pw" type="password" id="pw" placeholder="비밀번호를 입력해주세요."><br>
-	<input type="submit" value="로그인">
-</form>
+		
+		<input type="submit" value="로그인">
+	</form>
 </body>
 </html>
