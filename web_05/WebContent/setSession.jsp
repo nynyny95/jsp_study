@@ -7,10 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ 
-	
-	%>
-	
-	
+<%
+session.setAttribute("id", "nynyny95");
+session.setAttribute("pwd", "test12345");
+session.setAttribute("age", "28");
+%>
+<h3>세션 설정</h3>
 </body>
 </html>
