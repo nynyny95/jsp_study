@@ -28,8 +28,7 @@ public class IdCheckServlet extends HttpServlet {
 		 
 		 int result = mDao.confirmID(userid);
 		 
-		 request.setAttribute("userid", userid); request.setAttribute("result",
-		 result);
+		 request.setAttribute("userid", userid); request.setAttribute("result", result);
 		 
 		 RequestDispatcher dispatcher = request.getRequestDispatcher("member/idcheck.jsp");
 		 dispatcher.forward(request, response);

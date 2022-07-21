@@ -15,7 +15,7 @@
 		<table>
 			<tr>
 				<td>이름</td>
-				<td style="color:red;">*&nbsp;<input type="text" name="name" size="20"></td>
+				<td style="color:red;">*&nbsp;<input type="text" name="uname" size="20"></td>
 			</tr>
 			<tr>
 				<td>아이디</td>
@@ -41,9 +41,9 @@
 			</tr>
 			<tr>
 				<td>등급</td>
-				<td>&nbsp;&nbsp;<input type="radio" name="admin" value="0"
-					checked="checked"> 일반회원 <input type="radio" name="admin"
-					value="1"> 관리자</td>
+				<td>&nbsp;&nbsp;
+					<input type="radio" name="uadmin" value="0" checked="checked"> 일반회원
+					<input type="radio" name="uadmin" value="1"> 관리자</td>
 			</tr>
 			<tr>
 				<td colspan="2" align="center"><input type="submit" value="확인"
