@@ -53,6 +53,9 @@ public class MultiUploadServlet extends HttpServlet {
 	             String file_name = multi.getFilesystemName(file);
 	             // 중복된 파일을 업로드할 경우 파일명이 바뀐다.
 	             String ori_file_name = multi.getOriginalFileName(file);
+	             
+	             map.put(file_name,ori_file_name);
+	             request.setAttribute("map", map);
 				
 				/*
 				request.setAttribute("uploadFile0" + i, file_name);

@@ -162,7 +162,8 @@
 	      <Context docBase="web_jdbc" path="/web_jdbc" reloadable="true" source="org.eclipse.jst.jee.server:web_jdbc"/>
 	      <Context docBase="web_08_1" path="/web_08_1" reloadable="true" source="org.eclipse.jst.jee.server:web_08_1"/>
 	      <Context docBase="web_0719" path="/web_0719" reloadable="true" source="org.eclipse.jst.jee.server:web_0719"/>
-      <Context docBase="web_10" path="/web_10" reloadable="true" source="org.eclipse.jst.jee.server:web_10"/></Host>
+      <Context docBase="web_10" path="/web_10" reloadable="true" source="org.eclipse.jst.jee.server:web_10"></Context>
+      </Host>
     </Engine>
   </Service>
 </Server>
